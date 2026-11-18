@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ChoqueAI - Evaluador de Autos Siniestrados</title>
-<script src="https://puter.com"></script>
-
+  <script src="https://puter.com"></script>
   <style>
     body { font-family: -apple-system, sans-serif; background: #f4f6f9; color: #1e293b; margin: 0; padding: 20px; display: flex; justify-content: center; }
     .card { background: white; max-width: 480px; width: 100%; padding: 24px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; }
@@ -24,7 +23,7 @@
     <h1>🚗 ChoqueAI</h1>
     <p>Evaluador inteligente de autos de subasta y siniestros</p>
 
-    <input type="text" id="datosAuto" placeholder="🚘 Marca, modelo y año (ej. Nissan Sentra 2021)">
+    <input type="text" id="datosAuto" placeholder="🚘 Marca, modelo y año (ej. GMC Sierra 2022)">
 
     <div class="upload-box" onclick="document.getElementById('foto').click()">
       <span>📸 Toca aquí para subir foto del choque</span>
@@ -63,7 +62,7 @@
       res.innerHTML = '⏳ <strong>Analizando daños y calculando costos en México...</strong>';
 
       const prompt = `Eres un valuador experto de autos siniestrados y de subasta en México (Ventura, Copart, aseguradoras). Analiza esta foto del vehículo (${datosAuto}) y entrega un reporte claro y directo en español con:
-1. Piezas visibles dañadas (ej. fascia, tapa de cajuela, alma, calaveras, bastidor).
+1. Piezas visibles dañadas (ej. fascia, salpicadera, faro, cofre, suspensión, chasis).
 2. Nivel de gravedad del golpe (Leve, Moderado o Severo / posible daño estructural).
 3. Costo aproximado de reparación en México (refacciones + hojalatería y pintura) en pesos mexicanos (MXN), dando un rango mínimo y máximo.
 4. Recomendación rápida para compra en subasta.`;
